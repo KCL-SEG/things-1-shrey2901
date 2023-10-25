@@ -3,5 +3,5 @@ from django.db.models import Model
 
 class Thing:
     name = models.CharField()
-    description = models.TextField()
+    description = models.CharField()
     quantity = models.IntegerField()
