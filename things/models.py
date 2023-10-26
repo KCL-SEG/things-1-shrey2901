@@ -1,6 +1,6 @@
-from django.db.models import Model
+from django.db import models
 
-class Thing(Model):
+class Thing():
     name = models.CharField(max_length=30,unique = True, blank = False )
     description = models.CharField(max_length=120,blank =True)
     quantity = models.IntegerField()
@@ -8,4 +8,4 @@ class Thing(Model):
     '''def __init__(self,name,description,quantity):
         self.name = name
         self.description = description
-        self.quantity = quantity'''
+        self.quantity = quantity
